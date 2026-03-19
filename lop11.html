@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Khối 11 - Kinh tế & Pháp luật</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #e74c3c; --bg: #f4f7f6; } /* Khối 11 dùng màu Đỏ cam để phân biệt với Khối 10 màu Xanh */
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; flex-direction: column; background: var(--bg); }
+        .navbar { background: var(--primary); display: flex; justify-content: center; padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        .navbar a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
+        .navbar a:hover { color: var(--accent); }
+        
+        .container { display: flex; min-height: 100vh; }
+        
+        /* Menu dọc Khối 11 */
+        .sidebar { width: 300px; background: white; padding: 20px; border-right: 1px solid #ddd; height: 100vh; position: sticky; top: 50px; overflow-y: auto; }
+        .sidebar h3 { color: var(--primary); border-bottom: 2px solid var(--accent); padding-bottom: 10px; font-size: 18px; }
+        .sidebar b { display: block; margin-top: 15px; color: #7f8c8d; font-size: 13px; text-transform: uppercase; }
+        .sidebar a { display: block; padding: 10px 12px; color: #333; text-decoration: none; border-bottom: 1px solid #eee; font-size: 13.5px; transition: 0.2s; }
+        .sidebar a:hover { background: #fff5f5; color: var(--accent); padding-left: 20px; }
+
+        .main-content { flex: 1; padding: 40px; }
+        .welcome-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 15px rgba(0,0,0,0.05); border-top: 5px solid var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">TRANG CHỦ</a>
+        <a href="lop10.html">LỚP 10</a>
+        <a href="lop11.html" style="color: var(--accent);">LỚP 11</a>
+        <a href="lop12.html">LỚP 12</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>DANH MỤC LỚP 11</h3>
+            
+            <b>Chủ đề 1: Cạnh tranh, cung cầu</b>
+            <a href="lop11-bai1.html">Bài 1: Cạnh tranh trong nền KT thị trường</a>
+            <a href="lop11-bai2.html">Bài 2: Cung - cầu trong nền KT thị trường</a>
+            
+            <b>Chủ đề 2: Lạm phát, thất nghiệp</b>
+            <a href="lop11-bai3.html">Bài 3: Lạm phát</a>
+            <a href="lop11-bai4.html">Bài 4: Thất nghiệp</a>
+            
+            <b>Chủ đề 3: Thị trường việc làm</b>
+            <a href="lop11-bai5.html">Bài 5: Thị trường việc làm & Thu nhập</a>
+            
+            <b>Chủ đề 4: Ý tưởng kinh doanh</b>
+            <a href="lop11-bai6.html">Bài 6: Ý tưởng, cơ hội kinh doanh</a>
+            <a href="lop11-bai7.html">Bài 7: Năng lực kinh doanh</a>
+            <a href="lop11-bai8.html">Bài 8: Đạo đức kinh doanh</a>
+            
+            <b>Chủ đề 5: Văn hóa tiêu dùng</b>
+            <a href="lop11-bai9.html">Bài 9: Văn hóa tiêu dùng</a>
+
+            <b>Phần Pháp luật</b>
+            <a href="lop11-bai10.html">Bài 10: Quyền bình đẳng của công dân</a>
+            <a href="lop11-bai11.html">Bài 11: Quyền bình đẳng trong lao động</a>
+            <a href="lop11-bai12.html">Bài 12: Quyền bình đẳng giữa các dân tộc</a>
+        </div>
+
+        <div class="main-content">
+            <div class="welcome-card">
+                <h1>Chương trình Kinh tế & Pháp luật 11</h1>
+                <p>Chào mừng thầy và các em học sinh đến với chương trình lớp 11 - Bộ sách Kết nối tri thức.</p>
+                <p>Hệ thống đang được cập nhật nội dung chi tiết cho từng bài học.</p>
+                <hr>
+                <p>👈 <b>Hướng dẫn:</b> Chọn bài học cụ thể ở danh mục bên trái để bắt đầu.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
