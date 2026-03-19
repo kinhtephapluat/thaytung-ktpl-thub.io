@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3: Thị trường</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #3498db; --bg: #f4f7f6; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; flex-direction: column; background: var(--bg); }
+        .navbar { background: var(--primary); display: flex; justify-content: center; padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        .navbar a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
+        .container { display: flex; }
+        .sidebar { width: 280px; background: white; padding: 20px; border-right: 1px solid #ddd; height: 100vh; position: sticky; top: 50px; }
+        .sidebar h3 { border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+        .sidebar a { display: block; padding: 12px; color: #333; text-decoration: none; border-bottom: 1px solid #eee; }
+        .sidebar a.active { background: var(--accent); color: white; border-radius: 4px; }
+        .main-content { flex: 1; padding: 40px; }
+        .lesson-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 15px rgba(0,0,0,0.1); line-height: 1.8; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">TRANG CHỦ</a>
+        <a href="lop10.html" style="color: var(--accent);">LỚP 10</a>
+        <a href="lop11.html">LỚP 11</a>
+        <a href="lop12.html">LỚP 12</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>BÀI HỌC LỚP 10</h3>
+            <a href="lop10-bai1.html">Bài 1: Hoạt động kinh tế</a>
+            <a href="lop10-bai2.html">Bài 2: Các chủ thể kinh tế</a>
+            <a href="lop10-bai3.html" class="active">Bài 3: Thị trường</a>
+        </div>
+
+        <div class="main-content">
+            <div class="lesson-card">
+                <h1>BÀI 3: THỊ TRƯỜNG VÀ CƠ CHẾ THỊ TRƯỜNG</h1>
+                <p><b>1. Khái niệm thị trường:</b> Là lĩnh vực trao đổi, mua bán mà ở đó các chủ thể tương tác với nhau để xác định giá cả và số lượng hàng hóa.</p>
+                <p><b>2. Các loại thị trường:</b> Thị trường tư liệu sản xuất, thị trường tư liệu tiêu dùng, thị trường tài chính, v.v.</p>
+                <p><b>3. Chức năng của thị trường:</b> Thừa nhận giá trị hàng hóa, cung cấp thông tin, điều tiết sản xuất và tiêu dùng.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
