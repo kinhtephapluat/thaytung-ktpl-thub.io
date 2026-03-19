@@ -2,45 +2,31 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kinh tế Pháp luật - Thầy Tùng</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; display: flex; margin: 0; background: #f9f9f9; }
-        .sidebar { width: 220px; background: #2c3e50; height: 100vh; position: fixed; color: white; padding: 20px 10px; }
-        .sidebar h2 { font-size: 18px; text-align: center; border-bottom: 1px solid #555; padding-bottom: 10px; }
-        .sidebar ul { list-style: none; padding: 0; }
-        .sidebar li { padding: 12px 15px; border-bottom: 1px solid #34495e; }
-        .sidebar a { color: white; text-decoration: none; display: block; }
-        .sidebar a:hover { color: #3498db; }
-        .main-content { margin-left: 250px; padding: 30px; width: 80%; }
-        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f4f4; }
+        /* Menu ngang trên cùng */
+        .navbar { background: #2c3e50; display: flex; justify-content: center; padding: 15px; position: sticky; top: 0; }
+        .navbar a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; font-size: 18px; }
+        .navbar a:hover { color: #3498db; }
+        
+        .hero { text-align: center; padding: 100px 20px; background: white; margin: 20px; border-radius: 10px; }
+        h1 { color: #2c3e50; }
     </style>
 </head>
 <body>
-<div class="sidebar">
-    <h2>DANH MỤC LỚP</h2>
-    <ul>
-        <li><a href="index.html">Trang chủ</a></li>
-        <li><a href="#lop10">Lớp 10</a></li>
-        <li><a href="#lop11">Lớp 11</a></li>
-        <li><a href="#lop12">Lớp 12</a></li>
-    </ul>
-</div>
-<div class="main-content">
-    <div class="card">
-        <h1>Website Môn Kinh Tế Pháp Luật</h1>
-        <p>Chào mừng các em học sinh đến với trang tài liệu của thầy Tùng.</p>
-        <hr>
-        <h2 id="lop10">Chương trình Lớp 10</h2>
-        <p>👉 <a href="bai1-lop10.html" style="color: #2980b9; font-weight: bold; text-decoration: none;">Bài 1: Các hoạt động kinh tế cơ bản</a></p>
-        <p>👉 <a href="#" style="color: #2980b9; font-weight: bold; text-decoration: none;">Bài 2: Các chủ thể của nền kinh tế</a></p>
-        
-        <h2 id="lop11">Chương trình Lớp 11</h2>
-        <p>Nội dung sẽ cập nhật...</p>
 
-        <h2 id="lop12">Chương trình Lớp 12</h2>
-        <p>Nội dung sẽ cập nhật...</p>
-    </div>
+<div class="navbar">
+    <a href="index.html">TRANG CHỦ</a>
+    <a href="lop10.html">LỚP 10</a>
+    <a href="lop11.html">LỚP 11</a>
+    <a href="lop12.html">LỚP 12</a>
 </div>
+
+<div class="hero">
+    <h1>Chào mừng các em đến với môn Kinh tế & Pháp luật</h1>
+    <p>Hãy chọn khối lớp ở thanh menu phía trên để bắt đầu học tập.</p>
+</div>
+
 </body>
 </html>
