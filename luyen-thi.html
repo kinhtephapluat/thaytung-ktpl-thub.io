@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Luyện Thi KT&PL - Thầy Phát</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e74c3c;
+            --blue: #3498db;
+            --orange: #e67e22;
+            --green: #27ae60;
+            --bg: #f8f9fa;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); color: #333; }
+        
+        /* Header */
+        header { background: var(--primary); color: white; padding: 30px 20px; text-align: center; border-bottom: 5px solid var(--green); }
+        header h1 { margin: 0; font-size: 2em; text-transform: uppercase; letter-spacing: 2px; }
+        header p { opacity: 0.8; margin-top: 5px; }
+
+        .container { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+
+        /* Section Title */
+        .section-title { display: flex; align-items: center; margin: 30px 0 20px; border-left: 8px solid; padding-left: 15px; font-size: 1.5em; font-weight: bold; }
+        .title-10 { border-color: var(--blue); color: var(--blue); }
+        .title-11 { border-color: var(--orange); color: var(--orange); }
+        .title-12 { border-color: var(--green); color: var(--green); }
+
+        /* Grid Layout */
+        .exam-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; }
+
+        /* Exam Card */
+        .exam-card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s; border: 1px solid #eee; position: relative; }
+        .exam-card:hover { transform: translateY(-8px); box-shadow: 0 12px 25px rgba(0,0,0,0.1); }
+        
+        .card-tag { position: absolute; top: 10px; right: 10px; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; font-weight: bold; color: white; }
+        .tag-open { background: var(--green); }
+        .tag-closed { background: #95a5a6; }
+
+        .card-content { padding: 25px; }
+        .card-content h3 { margin: 0 0 10px 0; font-size: 1.3em; color: var(--primary); }
+        .info-row { display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 0.9em; color: #666; border-bottom: 1px dashed #eee; padding-bottom: 10px; }
+        
+        .btn-start { display: block; text-align: center; padding: 12px; border-radius: 6px; text-decoration: none; color: white; font-weight: bold; transition: 0.2s; }
+        .btn-10 { background: var(--blue); }
+        .btn-11 { background: var(--orange); }
+        .btn-12 { background: var(--green); }
+        .btn-start:hover { filter: brightness(1.1); }
+        .btn-locked { background: #bdc3c7; cursor: not-allowed; }
+
+        footer { text-align: center; padding: 40px; color: #999; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TRUNG TÂM KHẢO THÍ ONLINE</h1>
+    <p>Rèn luyện tư duy - Chinh phục điểm số cùng Thầy Phạm Thanh Phát</p>
+</header>
+
+<div class="container">
+    
+    <div class="section-title title-12">LỚP 12: ÔN THI TỐT NGHIỆP</div>
+    <div class="exam-grid">
+        <div class="exam-card">
+            <span class="card-tag tag-open">MỚI</span>
+            <div class="card-content">
+                <h3>Mã đề: 121</h3>
+                <div class="info-row">
+                    <span>⏱ 15 Phút</span>
+                    <span>📝 10 Câu</span>
+                </div>
+                <p style="font-size: 0.85em; color: #888;">Nội dung: Tăng trưởng và phát triển kinh tế.</p>
+                <a href="de-121.html" class="btn-start btn-12">BẮT ĐẦU LÀM BÀI</a>
+            </div>
+        </div>
+        
+        <div class="exam-card">
+            <span class="card-tag tag-open">MỞ</span>
+            <div class="card-content">
+                <h3>Mã đề: 122</h3>
+                <div class="info-row">
+                    <span>⏱ 20 Phút</span>
+                    <span>📝 15 Câu</span>
+                </div>
+                <p style="font-size: 0.85em; color: #888;">Nội dung: Hội nhập kinh tế quốc tế.</p>
+                <a href="de-122.html" class="btn-start btn-12">BẮT ĐẦU LÀM BÀI</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title title-11">LỚP 11: KINH TẾ VĨ MÔ</div>
+    <div class="exam-grid">
+        <div class="exam-card">
+            <span class="card-tag tag-closed">KHÓA</span>
+            <div class="card-content">
+                <h3>Mã đề: 111</h3>
+                <div class="info-row">
+                    <span>⏱ 15 Phút</span>
+                    <span>📝 10 Câu</span>
+                </div>
+                <p style="font-size: 0.85em; color: #888;">Nội dung: Cung - cầu trong kinh tế thị trường.</p>
+                <a href="#" class="btn-start btn-locked">CHƯA MỞ</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    Hệ thống luyện thi trực tuyến được thiết kế bởi Thầy Phạm Thanh Phát &copy; 2026
+</footer>
+
+</body>
+</html>
