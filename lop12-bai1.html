@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1: Tăng trưởng và phát triển kinh tế</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #27ae60; --bg: #f0f9f4; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; flex-direction: column; background: var(--bg); line-height: 1.6; }
+        .navbar { background: var(--primary); display: flex; justify-content: center; padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        .navbar a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
+        
+        .container { display: flex; }
+        .sidebar { width: 280px; background: white; padding: 20px; border-right: 1px solid #ddd; height: 100vh; position: sticky; top: 50px; overflow-y: auto; }
+        .sidebar h3 { color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+        .sidebar a { display: block; padding: 12px; color: #333; text-decoration: none; border-bottom: 1px solid #eee; font-size: 14px; }
+        .sidebar a.active { background: var(--accent); color: white; border-radius: 4px; }
+
+        .main-content { flex: 1; padding: 40px; max-width: 900px; margin: auto; }
+        .lesson-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        
+        h1 { color: var(--accent); text-transform: uppercase; border-left: 6px solid var(--accent); padding-left: 15px; }
+        h2 { color: var(--primary); background: #eef7f2; padding: 10px; border-radius: 5px; margin-top: 30px; }
+        
+        .image-box { text-align: center; margin: 25px 0; padding: 15px; border: 1px dashed var(--accent); border-radius: 10px; background: #fff; }
+        .image-box img { max-width: 100%; height: auto; border-radius: 5px; }
+
+        .quiz-section { background: #f0fff4; padding: 30px; border-radius: 10px; border: 1px solid var(--accent); margin-top: 40px; }
+        .q-item { margin-bottom: 20px; border-bottom: 1px solid #e0eee6; padding-bottom: 15px; }
+        .q-text { font-weight: bold; display: block; margin-bottom: 10px; }
+        .option { display: block; margin: 5px 0; cursor: pointer; padding: 8px; border-radius: 5px; transition: 0.3s; }
+        .option:hover { background: #e2f3e9; }
+        .btn-check { background: var(--accent); color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 18px; }
+        #quiz-res { text-align: center; font-size: 1.4em; margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">TRANG CHỦ</a>
+        <a href="lop10.html">LỚP 10</a>
+        <a href="lop11.html">LỚP 11</a>
+        <a href="lop12.html" style="color: var(--accent);">LỚP 12</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>BÀI HỌC LỚP 12</h3>
+            <a href="lop12-bai1.html" class="active">Bài 1: Tăng trưởng & Phát triển KT</a>
+            <a href="lop12-bai2.html">Bài 2: Hội nhập kinh tế quốc tế</a>
+            <a href="lop12-bai3.html">Bài 3: Bảo hiểm</a>
+        </div>
+
+        <div class="main-content">
+            <div class="lesson-card">
+                <h1>BÀI 1: TĂNG TRƯỞNG VÀ PHÁT TRIỂN KINH TẾ</h1>
+
+                <h2>I. MỤC TIÊU BÀI HỌC</h2>
+                <ul>
+                    <li>Phân biệt được khái niệm tăng trưởng kinh tế và phát triển kinh tế.</li>
+                    <li>Nêu được các chỉ tiêu của tăng trưởng kinh tế (GDP, GNI, GDP/người).</li>
+                    <li>Giải thích được mối quan hệ giữa tăng trưởng kinh tế và phát triển bền vững.</li>
+                </ul>
+
+                <h2>II. NỘI DUNG CHI TIẾT</h2>
+                <h3>1. Tăng trưởng kinh tế</h3>
+                <p><b>Khái niệm:</b> Là sự tăng thêm về quy mô sản lượng hàng hóa và dịch vụ mà một nền kinh tế tạo ra trong một khoảng thời gian nhất định.</p>
+                <p><b>Các chỉ tiêu:</b> GDP (Tổng sản phẩm quốc nội), GNI (Tổng thu nhập quốc gia), GDP bình quân đầu người.</p>
+
+                <div class="image-box">
+                    <img src="https://via.placeholder.com/600x300.png?text=Bieu+Do+Tang+Truong+GDP+Viet+Nam" alt="Biểu đồ GDP">
+                    <p><i>Hình 1.1: Biểu đồ tốc độ tăng trưởng GDP của Việt Nam (Sách GK trang 6)</i></p>
+                </div>
+
+                <h3>2. Phát triển kinh tế</h3>
+                <p>Phát triển kinh tế bao hàm phạm vi rộng hơn tăng trưởng. Nó bao gồm:</p>
+                <ul>
+                    <li>Sự tăng trưởng kinh tế bền vững.</li>
+                    <li>Sự thay đổi cơ cấu kinh tế theo hướng hiện đại.</li>
+                    <li>Nâng cao chất lượng cuộc sống (Chỉ số HDI, y tế, giáo dục).</li>
+                </ul>
+
+                <h3>3. Mối quan hệ giữa tăng trưởng và phát triển</h3>
+                <p>Tăng trưởng là tiền đề, là điều kiện cần của phát triển. Tuy nhiên, tăng trưởng không đi đôi với tiến bộ xã hội và bảo vệ môi trường thì không phải là phát triển bền vững.</p>
+
+                <div class="quiz-section">
+                    <h2>III. LUYỆN TẬP TRẮC NGHIỆM (10 CÂU)</h2>
+                    <div id="quiz-content">
+                        <div class="q-item">
+                            <span class="q-text">Câu 1: Chỉ tiêu nào phản ánh sự tăng thêm về quy mô sản lượng của nền kinh tế?</span>
+                            <label class="option"><input type="radio" name="q1" value="1"> A. Tăng trưởng kinh tế</label>
+                            <label class="option"><input type="radio" name="q1" value="0"> B. Công bằng xã hội</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 2: GDP là từ viết tắt của chỉ số nào sau đây?</span>
+                            <label class="option"><input type="radio" name="q2" value="1"> A. Tổng sản phẩm quốc nội</label>
+                            <label class="option"><input type="radio" name="q2" value="0"> B. Tổng thu nhập quốc gia</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 3: Phát triển kinh tế là sự tăng trưởng kinh tế gắn liền với?</span>
+                            <label class="option"><input type="radio" name="q3" value="1"> A. Cơ cấu kinh tế hợp lý và tiến bộ xã hội</label>
+                            <label class="option"><input type="radio" name="q3" value="0"> B. Việc tăng dân số nhanh chóng</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 4: Chỉ số HDI dùng để đo lường yếu tố nào?</span>
+                            <label class="option"><input type="radio" name="q4" value="1"> A. Phát triển con người</label>
+                            <label class="option"><input type="radio" name="q4" value="0"> B. Lạm phát</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 5: Để đạt được phát triển bền vững, tăng trưởng kinh tế phải đi đôi với?</span>
+                            <label class="option"><input type="radio" name="q5" value="1"> A. Bảo vệ môi trường sinh thái</label>
+                            <label class="option"><input type="radio" name="q5" value="0"> B. Khai thác tài nguyên triệt để</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 6: Một quốc gia có GDP tăng cao nhưng tỉ lệ hộ nghèo không giảm thì chưa được gọi là?</span>
+                            <label class="option"><input type="radio" name="q6" value="1"> A. Phát triển kinh tế</label>
+                            <label class="option"><input type="radio" name="q6" value="0"> B. Tăng trưởng kinh tế</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 7: Tăng trưởng kinh tế là điều kiện cần để thực hiện?</span>
+                            <label class="option"><input type="radio" name="q7" value="1"> A. Xóa đói giảm nghèo và tiến bộ xã hội</label>
+                            <label class="option"><input type="radio" name="q7" value="0"> B. Gia tăng nợ công</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 8: Sự thay đổi cơ cấu kinh tế theo hướng hiện đại thường là?</span>
+                            <label class="option"><input type="radio" name="q8" value="1"> A. Tăng tỉ trọng công nghiệp và dịch vụ</label>
+                            <label class="option"><input type="radio" name="q8" value="0"> B. Tăng tỉ trọng nông nghiệp thuần túy</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 9: Chỉ tiêu GNI phản ánh nội dung nào?</span>
+                            <label class="option"><input type="radio" name="q9" value="1"> A. Tổng thu nhập quốc gia</label>
+                            <label class="option"><input type="radio" name="q9" value="0"> B. Tổng mức bán lẻ hàng hóa</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 10: Tăng trưởng kinh tế bền vững giúp mục tiêu nào sau đây được thực hiện?</span>
+                            <label class="option"><input type="radio" name="q10" value="1"> A. Ổn định đời sống nhân dân lâu dài</label>
+                            <label class="option"><input type="radio" name="q10" value="0"> B. Chỉ phục vụ lợi ích của người giàu</label>
+                        </div>
+                    </div>
+                    <button class="btn-check" onclick="checkQuiz()">XEM ĐIỂM SỐ</button>
+                    <div id="quiz-res"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkQuiz() {
+            let score = 0;
+            for(let i=1; i<=10; i++) {
+                let r = document.querySelector('input[name="q'+i+'"]:checked');
+                if(r && r.value === "1") score++;
+            }
+            let res = document.getElementById("quiz-res");
+            res.innerHTML = "Kết quả: " + score + "/10 câu đúng!";
+            res.style.color = score >= 8 ? "#27ae60" : (score >= 5 ? "#f39c12" : "#e74c3c");
+        }
+    </script>
+</body>
+</html>
