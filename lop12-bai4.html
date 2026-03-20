@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4: An sinh xã hội</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #27ae60; --bg: #f0f9f4; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; flex-direction: column; background: var(--bg); line-height: 1.6; }
+        .navbar { background: var(--primary); display: flex; justify-content: center; padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        .navbar a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
+        
+        .container { display: flex; }
+        .sidebar { width: 280px; background: white; padding: 20px; border-right: 1px solid #ddd; height: 100vh; position: sticky; top: 50px; overflow-y: auto; }
+        .sidebar h3 { color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+        .sidebar a { display: block; padding: 12px; color: #333; text-decoration: none; border-bottom: 1px solid #eee; font-size: 14px; }
+        .sidebar a.active { background: var(--accent); color: white; border-radius: 4px; }
+
+        .main-content { flex: 1; padding: 40px; max-width: 900px; margin: auto; }
+        .lesson-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        
+        h1 { color: var(--accent); text-transform: uppercase; border-left: 6px solid var(--accent); padding-left: 15px; }
+        h2 { color: var(--primary); background: #eef7f2; padding: 10px; border-radius: 5px; margin-top: 30px; }
+        
+        .quiz-section { background: #f0fff4; padding: 30px; border-radius: 10px; border: 1px solid var(--accent); margin-top: 40px; }
+        .q-item { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #e0eee6; }
+        .q-text { font-weight: bold; display: block; margin-bottom: 10px; }
+        .option { display: block; margin: 5px 0; cursor: pointer; padding: 10px; border-radius: 5px; background: #fff; border: 1px solid #d1e7dd; transition: 0.3s; }
+        .option:hover { background: #e2f3e9; }
+        
+        /* Phần giải thích */
+        .explanation { display: none; margin-top: 10px; padding: 10px; background: #fff3cd; border-left: 4px solid #ffc107; font-style: italic; font-size: 14px; color: #856404; }
+        
+        .btn-check { background: var(--accent); color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 18px; margin-top: 20px; }
+        #quiz-res { text-align: center; font-size: 1.4em; margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">TRANG CHỦ</a>
+        <a href="lop10.html">LỚP 10</a>
+        <a href="lop11.html">LỚP 11</a>
+        <a href="lop12.html" style="color: var(--accent);">LỚP 12</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>BÀI HỌC LỚP 12</h3>
+            <a href="lop12-bai1.html">Bài 1: Tăng trưởng & Phát triển KT</a>
+            <a href="lop12-bai2.html">Bài 2: Hội nhập kinh tế quốc tế</a>
+            <a href="lop12-bai3.html">Bài 3: Bảo hiểm</a>
+            <a href="lop12-bai4.html" class="active">Bài 4: An sinh xã hội</a>
+        </div>
+
+        <div class="main-content">
+            <div class="lesson-card">
+                <h1>BÀI 4: AN SINH XÃ HỘI</h1>
+
+                <h2>I. MỤC TIÊU BÀI HỌC</h2>
+                <ul>
+                    <li>Nêu được khái niệm an sinh xã hội và các trụ cột cơ bản.</li>
+                    <li>Phân tích được vai trò của an sinh xã hội đối với sự phát triển đất nước.</li>
+                    <li>Có ý thức thực hiện và ủng hộ các chính sách an sinh xã hội của Nhà nước.</li>
+                </ul>
+
+                <h2>II. NỘI DUNG CHI TIẾT</h2>
+                <h3>1. Khái niệm an sinh xã hội</h3>
+                <p>Là hệ thống các chính sách và biện pháp của Nhà nước nhằm giúp đỡ mọi thành viên trong xã hội đối phó với các rủi ro, cú sốc về kinh tế - xã hội, góp phần bảo đảm thu nhập và đời sống tối thiểu.</p>
+
+                <h3>2. Các trụ cột chính</h3>
+                <ul>
+                    <li><b>Giảm nghèo bền vững:</b> Hỗ trợ người nghèo vươn lên.</li>
+                    <li><b>Bảo hiểm xã hội:</b> Trụ cột cốt lõi đảm bảo thu nhập khi mất khả năng lao động.</li>
+                    <li><b>Trợ giúp xã hội:</b> Giúp đỡ các đối tượng yếu thế (người già neo đơn, trẻ mồ côi...).</li>
+                    <li><b>Dịch vụ xã hội cơ bản:</b> Giáo dục, y tế, nước sạch, thông tin.</li>
+                </ul>
+
+                <div class="quiz-section">
+                    <h2>III. LUYỆN TẬP (CÓ GIẢI THÍCH)</h2>
+                    
+                    <div class="q-item">
+                        <span class="q-text">Câu 1: Mục tiêu cao nhất của chính sách an sinh xã hội là gì?</span>
+                        <label class="option"><input type="radio" name="q1" value="1"> A. Đảm bảo đời sống tối thiểu cho mọi người dân</label>
+                        <label class="option"><input type="radio" name="q1" value="0"> B. Chỉ tập trung làm giàu cho tầng lớp thượng lưu</label>
+                        <label class="option"><input type="radio" name="q1" value="0"> C. Tăng mức lạm phát để kích thích tiêu dùng</label>
+                        <label class="option"><input type="radio" name="q1" value="0"> D. Xóa bỏ hoàn toàn các loại hình bảo hiểm tự nguyện</label>
+                        <div class="explanation">Giải thích: An sinh xã hội nhằm tạo ra một "lưới an toàn" để đảm bảo mọi người dân không bị rơi vào cảnh bần cùng khi gặp rủi ro.</div>
+                    </div>
+
+                    <div class="q-item">
+                        <span class="q-text">Câu 2: Trụ cột nào giúp hỗ trợ khẩn cấp cho người dân khi gặp thiên tai, hỏa hoạn?</span>
+                        <label class="option"><input type="radio" name="q2" value="0"> A. Tăng trưởng kinh tế</label>
+                        <label class="option"><input type="radio" name="q2" value="1"> B. Trợ giúp xã hội</label>
+                        <label class="option"><input type="radio" name="q2" value="0"> C. Xuất khẩu lao động</label>
+                        <label class="option"><input type="radio" name="q2" value="0"> D. Đầu tư chứng khoán</label>
+                        <div class="explanation">Giải thích: Trợ giúp xã hội là việc Nhà nước và cộng đồng hỗ trợ cho các đối tượng rơi vào hoàn cảnh đặc biệt khó khăn hoặc rủi ro bất ngờ.</div>
+                    </div>
+
+                    <div class="q-item">
+                        <span class="q-text">Câu 3: Việc cung cấp nước sạch và vệ sinh môi trường thuộc nhóm chính sách nào?</span>
+                        <label class="option"><input type="radio" name="q3" value="0"> A. Bảo hiểm thương mại</label>
+                        <label class="option"><input type="radio" name="q3" value="0"> B. Cho vay nặng lãi</label>
+                        <label class="option"><input type="radio" name="q3" value="1"> C. Dịch vụ xã hội cơ bản</label>
+                        <label class="option"><input type="radio" name="q3" value="0"> D. Giảm thuế thu nhập doanh nghiệp</label>
+                        <div class="explanation">Giải thích: Dịch vụ xã hội cơ bản bao gồm y tế, giáo dục, nước sạch, nhà ở... nhằm đáp ứng nhu cầu tối thiểu của con người.</div>
+                    </div>
+
+                    <button class="btn-check" onclick="submitQuiz()">NỘP BÀI & XEM GIẢI THÍCH</button>
+                    <div id="quiz-res"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            let correct = 0;
+            const total = 3; // Thầy có thể thêm tiếp cho đủ 10 câu
+            for(let i=1; i<=total; i++) {
+                let selected = document.querySelector('input[name="q'+i+'"]:checked');
+                if(selected && selected.value === "1") correct++;
+            }
+            
+            // Hiện giải thích
+            let exps = document.querySelectorAll('.explanation');
+            exps.forEach(e => e.style.display = 'block');
+            
+            let res = document.getElementById("quiz-res");
+            res.innerHTML = "Kết quả của thầy/cô: " + correct + "/" + total + " câu đúng!";
+        }
+    </script>
+</body>
+</html>
