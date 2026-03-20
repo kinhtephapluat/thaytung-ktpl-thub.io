@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2: Cung - cầu trong nền kinh tế thị trường</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #e74c3c; --bg: #fdf2f0; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; flex-direction: column; background: var(--bg); line-height: 1.6; }
+        .navbar { background: var(--primary); display: flex; justify-content: center; padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        .navbar a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
+        
+        .container { display: flex; }
+        .sidebar { width: 280px; background: white; padding: 20px; border-right: 1px solid #ddd; height: 100vh; position: sticky; top: 50px; overflow-y: auto; }
+        .sidebar h3 { color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+        .sidebar a { display: block; padding: 12px; color: #333; text-decoration: none; border-bottom: 1px solid #eee; font-size: 14px; }
+        .sidebar a.active { background: var(--accent); color: white; border-radius: 4px; }
+
+        .main-content { flex: 1; padding: 40px; max-width: 900px; margin: auto; }
+        .lesson-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        
+        h1 { color: var(--accent); text-transform: uppercase; border-left: 6px solid var(--accent); padding-left: 15px; }
+        h2 { color: var(--primary); background: #eee; padding: 10px; border-radius: 5px; margin-top: 30px; }
+        
+        .img-box { text-align: center; margin: 25px 0; background: #f9f9f9; padding: 15px; border-radius: 10px; border: 1px solid #eee; }
+        .img-box img { max-width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+
+        .quiz-section { background: #fff5f2; padding: 30px; border-radius: 10px; border: 1px solid var(--accent); margin-top: 40px; }
+        .q-item { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #edcdc5; }
+        .q-text { font-weight: bold; color: var(--primary); margin-bottom: 10px; display: block; }
+        .ans-opt { display: block; padding: 12px; background: white; border: 1px solid #ddd; margin-bottom: 8px; cursor: pointer; border-radius: 6px; transition: 0.2s; }
+        .ans-opt:hover { background: #fff0ed; border-color: var(--accent); }
+        .btn-submit { background: var(--accent); color: white; border: none; padding: 15px 30px; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; font-size: 18px; margin-top: 20px; }
+        #final-score { text-align: center; font-size: 1.5em; margin-top: 25px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">TRANG CHỦ</a>
+        <a href="lop10.html">LỚP 10</a>
+        <a href="lop11.html" style="color: var(--accent);">LỚP 11</a>
+        <a href="lop12.html">LỚP 12</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>BÀI HỌC LỚP 11</h3>
+            <a href="lop11-bai1.html">Bài 1: Cạnh tranh kinh tế</a>
+            <a href="lop11-bai2.html" class="active">Bài 2: Cung - cầu</a>
+            <a href="lop11-bai3.html">Bài 3: Lạm phát</a>
+        </div>
+
+        <div class="main-content">
+            <div class="lesson-card">
+                <h1>BÀI 2: CUNG - CẦU TRONG NỀN KINH TẾ THỊ TRƯỜNG</h1>
+
+                <h2>I. MỤC TIÊU BÀI HỌC</h2>
+                <ul>
+                    <li><b>Kiến thức:</b> Giải thích được khái niệm cung, cầu và các nhân tố ảnh hưởng đến cung, cầu.</li>
+                    <li><b>Năng lực:</b> Phân tích được mối quan hệ tác động qua lại giữa cung và cầu.</li>
+                    <li><b>Thái độ:</b> Vận dụng kiến thức để đưa ra quyết định tiêu dùng và sản xuất hợp lý.</li>
+                </ul>
+
+                <h2>II. NỘI DUNG TRỌNG TÂM</h2>
+                
+                <h3>1. Cầu và các nhân tố ảnh hưởng đến cầu</h3>
+                <p><b>Khái niệm:</b> Cầu là lượng hàng hóa, dịch vụ mà người tiêu dùng sẵn sàng mua với một mức giá nhất định trong khoảng thời gian xác định.</p>
+                <div class="img-box">
+                    <img src="https://via.placeholder.com/650x350.png?text=Bieu+do+Quan+he+Cung+Cau" alt="Mô hình cung cầu">
+                    <p><i>Hình 2.1: Mô hình hóa tác động của giá cả đến lượng cầu (Tham khảo SGK trang 12)</i></p>
+                </div>
+                <p><b>Nhân tố ảnh hưởng:</b> Giá cả sản phẩm, thu nhập của người tiêu dùng, thị hiếu, giá hàng hóa thay thế...</p>
+
+                <h3>2. Cung và các nhân tố ảnh hưởng đến cung</h3>
+                <p><b>Khái niệm:</b> Cung là số lượng hàng hóa, dịch vụ mà nhà cung cấp sẵn sàng đáp ứng cho nhu cầu của thị trường với mức giá xác định.</p>
+                <p><b>Nhân tố ảnh hưởng:</b> Chi phí đầu vào (nguyên liệu, nhân công), công nghệ sản xuất, số lượng người bán, kỳ vọng của nhà sản xuất.</p>
+
+                <h3>3. Mối quan hệ giữa Cung và Cầu</h3>
+                <p>Cung và cầu tác động qua lại lẫn nhau trên thị trường:</p>
+                <ul>
+                    <li>Khi <b>Cung > Cầu</b>: Giá cả giảm.</li>
+                    <li>Khi <b>Cung < Cầu</b>: Giá cả tăng.</li>
+                    <li>Khi <b>Cung = Cầu</b>: Giá cả ở mức cân bằng (giá cả thị trường).</li>
+                </ul>
+
+                <div class="quiz-section">
+                    <h2>III. LUYỆN TẬP TRẮC NGHIỆM</h2>
+                    <div id="quiz-block">
+                        <div class="q-item">
+                            <span class="q-text">Câu 1: Trong nền kinh tế thị trường, khi giá cả hàng hóa tăng lên thì lượng cầu thường có xu hướng?</span>
+                            <label class="ans-opt"><input type="radio" name="q1" value="0"> A. Tăng lên</label>
+                            <label class="ans-opt"><input type="radio" name="q1" value="1"> B. Giảm xuống</label>
+                        </div>
+
+                        <div class="q-item">
+                            <span class="q-text">Câu 2: "Đơn đặt hàng" của thị trường dành cho các nhà sản xuất chính là?</span>
+                            <label class="ans-opt"><input type="radio" name="q2" value="1"> A. Cầu của người tiêu dùng</label>
+                            <label class="ans-opt"><input type="radio" name="q2" value="0"> B. Khả năng cung ứng</label>
+                        </div>
+
+                        <div class="q-item">
+                            <span class="q-text">Câu 3: Khi cung lớn hơn cầu, các doanh nghiệp thường có xu hướng xử lý như thế nào?</span>
+                            <label class="ans-opt"><input type="radio" name="q3" value="1"> A. Thu hẹp quy mô sản xuất</label>
+                            <label class="ans-opt"><input type="radio" name="q3" value="0"> B. Mở rộng thêm xưởng sản xuất</label>
+                        </div>
+
+                        <div class="q-item">
+                            <span class="q-text">Câu 4: Nhân tố nào sau đây ảnh hưởng trực tiếp đến Cung?</span>
+                            <label class="ans-opt"><input type="radio" name="q4" value="1"> A. Chi phí các yếu tố đầu vào</label>
+                            <label class="ans-opt"><input type="radio" name="q4" value="0"> B. Thu nhập cá nhân người mua</label>
+                        </div>
+
+                        <div class="q-item">
+                            <span class="q-text">Câu 5: Quan hệ cung - cầu là căn cứ để ai lựa chọn việc mua hàng phù hợp?</span>
+                            <label class="ans-opt"><input type="radio" name="q5" value="1"> A. Người tiêu dùng</label>
+                            <label class="ans-opt"><input type="radio" name="q5" value="0"> B. Cơ quan quản lý nhà nước</label>
+                        </div>
+
+                        <div class="q-item">
+                            <span class="q-text">Câu 6: Khi dịch bệnh xảy ra khiến nguồn cung thịt lợn khó khăn, giá thịt lợn sẽ?</span>
+                            <label class="ans-opt"><input type="radio" name="q6" value="1"> A. Tăng cao do cung nhỏ hơn cầu</label>
+                            <label class="ans-opt"><input type="radio" name="q6" value="0"> B. Giảm xuống do cầu giảm</label>
+                        </div>
+
+                        <div class="q-item">
+                            <span class="q-text">Câu 7: Đâu là mục đích của người sản xuất khi quan sát quan hệ cung - cầu?</span>
+                            <label class="ans-opt"><input type="radio" name="q7" value="1"> A. Tìm kiếm lợi nhuận tối đa</label>
+                            <label class="ans-opt"><input type="radio" name="q7" value="0"> B. Để từ thiện hàng hóa</label>
+                        </div>
+
+                        <div class="q-item">
+                            <span class="q-text">Câu 8: Giá cả là tác nhân trực tiếp làm cho cung và cầu biến động như thế nào?</span>
+                            <label class="ans-opt"><input type="radio" name="q8" value="1"> A. Luôn thay đổi theo giá</label>
+                            <label class="ans-opt"><input type="radio" name="q8" value="0"> B. Không bao giờ thay đổi</label>
+                        </div>
+
+                        <div class="q-item">
+                            <span class="q-text">Câu 9: Khi thu nhập của người dân tăng lên, cầu về các mặt hàng xa xỉ thường?</span>
+                            <label class="ans-opt"><input type="radio" name="q9" value="1"> A. Tăng lên</label>
+                            <label class="ans-opt"><input type="radio" name="q9" value="0"> B. Giảm đi</label>
+                        </div>
+
+                        <div class="q-item">
+                            <span class="q-text">Câu 10: Nhà nước sử dụng quan hệ cung - cầu để thực hiện vai trò gì?</span>
+                            <label class="ans-opt"><input type="radio" name="q10" value="1"> A. Điều tiết và ổn định thị trường</label>
+                            <label class="ans-opt"><input type="radio" name="q10" value="0"> B. Ép buộc giá cả đứng yên</label>
+                        </div>
+                    </div>
+                    <button class="btn-submit" onclick="checkScore()">NỘP BÀI KIỂM TRA</button>
+                    <div id="final-score"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkScore() {
+            let correct = 0;
+            const totalQ = 10;
+            for(let i=1; i<=totalQ; i++) {
+                let r = document.querySelector('input[name="q'+i+'"]:checked');
+                if(r && r.value === "1") correct++;
+            }
+            let display = document.getElementById("final-score");
+            display.innerHTML = "Thầy/Cô đạt: " + correct + "/" + totalQ + " câu đúng!";
+            display.style.color = correct >= 8 ? "#27ae60" : (correct >= 5 ? "#f39c12" : "#e74c3c");
+        }
+    </script>
+</body>
+</html>
