@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1: Cạnh tranh trong nền kinh tế thị trường</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #e74c3c; --bg: #fdf2f0; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; flex-direction: column; background: var(--bg); line-height: 1.6; }
+        .navbar { background: var(--primary); display: flex; justify-content: center; padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        .navbar a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
+        
+        .container { display: flex; }
+        .sidebar { width: 280px; background: white; padding: 20px; border-right: 1px solid #ddd; height: 100vh; position: sticky; top: 50px; overflow-y: auto; }
+        .sidebar h3 { color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+        .sidebar a { display: block; padding: 12px; color: #333; text-decoration: none; border-bottom: 1px solid #eee; font-size: 14px; }
+        .sidebar a.active { background: var(--accent); color: white; border-radius: 4px; }
+
+        .main-content { flex: 1; padding: 40px; max-width: 900px; margin: auto; }
+        .lesson-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        
+        h1 { color: var(--accent); text-transform: uppercase; border-left: 6px solid var(--accent); padding-left: 15px; }
+        h2 { color: var(--primary); background: #eee; padding: 10px; border-radius: 5px; }
+        
+        .image-placeholder { background: #f0f0f0; border: 2px dashed #ccc; padding: 40px; text-align: center; margin: 20px 0; border-radius: 10px; }
+        .image-placeholder img { max-width: 100%; height: auto; border-radius: 5px; }
+
+        .quiz-container { background: #fff5f2; padding: 30px; border-radius: 10px; border: 1px solid var(--accent); margin-top: 40px; }
+        .question { font-weight: bold; margin: 20px 0 10px; color: var(--primary); }
+        .option { display: block; padding: 10px; background: white; border: 1px solid #ddd; margin-bottom: 5px; cursor: pointer; border-radius: 5px; }
+        .option:hover { background: #fff0ed; }
+        .check-btn { background: var(--accent); color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 16px; margin-top: 20px; }
+        #result { text-align: center; font-size: 1.5em; margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">TRANG CHỦ</a>
+        <a href="lop10.html">LỚP 10</a>
+        <a href="lop11.html" style="color: var(--accent);">LỚP 11</a>
+        <a href="lop12.html">LỚP 12</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>BÀI HỌC LỚP 11</h3>
+            <a href="lop11-bai1.html" class="active">Bài 1: Cạnh tranh kinh tế</a>
+            <a href="lop11-bai2.html">Bài 2: Cung - cầu</a>
+            <a href="lop11-bai3.html">Bài 3: Lạm phát</a>
+        </div>
+
+        <div class="main-content">
+            <div class="lesson-card">
+                <h1>BÀI 1: CẠNH TRANH TRONG NỀN KINH TẾ THỊ TRƯỜNG</h1>
+
+                <h2>I. MỤC TIÊU BÀI HỌC</h2>
+                <ul>
+                    <li><b>Kiến thức:</b> Nêu được khái niệm cạnh tranh, nguyên nhân và vai trò của cạnh tranh.</li>
+                    <li><b>Năng lực:</b> Phân tích được các hình thức cạnh tranh không lành mạnh.</li>
+                    <li><b>Thái độ:</b> Ủng hộ các hành vi cạnh tranh lành mạnh.</li>
+                </ul>
+
+                <h2>II. NỘI DUNG CHI TIẾT</h2>
+                <h3>1. Khái niệm và nguyên nhân cạnh tranh</h3>
+                <p>Cạnh tranh kinh tế là sự ganh đua giữa các chủ thể kinh tế nhằm giành giật những điều kiện thuận lợi để thu được nhiều lợi nhuận nhất.</p>
+                
+                <div class="image-placeholder">
+                    <img src="https://via.placeholder.com/600x300.png?text=Hinh+Anh+Minh+Hoa+Canh+Tranh" alt="Ảnh minh họa">
+                    <p><i>Hình 1.1: Các doanh nghiệp cạnh tranh về chất lượng và mẫu mã (Sách GK trang 6)</i></p>
+                </div>
+
+                <h3>2. Vai trò của cạnh tranh</h3>
+                <p>Cạnh tranh là động lực của sự phát triển. Nó buộc người sản xuất phải cải tiến kỹ thuật, nâng cao năng suất lao động.</p>
+
+                <h3>3. Cạnh tranh không lành mạnh</h3>
+                <p>Là những hành vi trái với đạo đức, pháp luật như: quảng cáo gian dối, vi phạm bản quyền, hạ giá bán để độc chiếm thị trường...</p>
+
+                <div class="quiz-container">
+                    <h2>III. LUYỆN TẬP (10 CÂU HỎI)</h2>
+                    <div id="quiz">
+                        <p class="question">Câu 1: Cạnh tranh kinh tế là sự ganh đua giữa các chủ thể nhằm mục đích cuối cùng là gì?</p>
+                        <label class="option"><input type="radio" name="q1" value="0"> A. Giúp đỡ nhau</label>
+                        <label class="option"><input type="radio" name="q1" value="1"> B. Lợi nhuận</label>
+
+                        <p class="question">Câu 2: Nguyên nhân khách quan dẫn đến cạnh tranh là do?</p>
+                        <label class="option"><input type="radio" name="q2" value="1"> A. Sự khác biệt về điều kiện sản xuất</label>
+                        <label class="option"><input type="radio" name="q2" value="0"> B. Do ý muốn của Nhà nước</label>
+
+                        <p class="question">Câu 3: Hành vi nào sau đây là cạnh tranh không lành mạnh?</p>
+                        <label class="option"><input type="radio" name="q3" value="1"> A. Tung tin đồn thất thiệt về đối thủ</label>
+                        <label class="option"><input type="radio" name="q3" value="0"> B. Giảm giá nhờ cải tiến kỹ thuật</label>
+
+                        <p class="question">Câu 4: Cạnh tranh giúp người tiêu dùng được hưởng lợi về?</p>
+                        <label class="option"><input type="radio" name="q4" value="1"> A. Giá rẻ và chất lượng tốt</label>
+                        <label class="option"><input type="radio" name="q4" value="0"> B. Chỉ được hưởng lợi về số lượng</label>
+
+                        <p class="question">Câu 5: Đâu là mặt tích cực của cạnh tranh?</p>
+                        <label class="option"><input type="radio" name="q5" value="1"> A. Thúc đẩy tăng trưởng kinh tế</label>
+                        <label class="option"><input type="radio" name="q5" value="0"> B. Làm cạn kiệt tài nguyên</label>
+
+                        <p class="question">Câu 6-10: (Thầy có thể soạn thêm câu hỏi phù hợp với tình hình lớp học)</p>
+                    </div>
+                    <button class="check-btn" onclick="submitQuiz()">NỘP BÀI & XEM ĐIỂM</button>
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            let score = 0;
+            let total = 5; // Số câu hỏi thầy đã soạn
+            for(let i=1; i<=total; i++) {
+                let r = document.querySelector('input[name="q'+i+'"]:checked');
+                if(r && r.value === "1") score++;
+            }
+            let res = document.getElementById("result");
+            res.innerHTML = "Kết quả: " + score + "/" + total + " câu đúng!";
+            res.style.color = score >= (total/2) ? "#27ae60" : "#e74c3c";
+        }
+    </script>
+</body>
+</html>
