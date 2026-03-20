@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4: Thất nghiệp trong nền kinh tế thị trường</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #e74c3c; --bg: #fdf2f0; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; flex-direction: column; background: var(--bg); line-height: 1.6; }
+        .navbar { background: var(--primary); display: flex; justify-content: center; padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        .navbar a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
+        
+        .container { display: flex; }
+        .sidebar { width: 280px; background: white; padding: 20px; border-right: 1px solid #ddd; height: 100vh; position: sticky; top: 50px; overflow-y: auto; }
+        .sidebar h3 { color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+        .sidebar a { display: block; padding: 12px; color: #333; text-decoration: none; border-bottom: 1px solid #eee; font-size: 14px; }
+        .sidebar a.active { background: var(--accent); color: white; border-radius: 4px; }
+
+        .main-content { flex: 1; padding: 40px; max-width: 900px; margin: auto; }
+        .lesson-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        
+        h1 { color: var(--accent); text-transform: uppercase; border-left: 6px solid var(--accent); padding-left: 15px; }
+        h2 { color: var(--primary); background: #eee; padding: 10px; border-radius: 5px; margin-top: 30px; }
+        
+        .image-box { text-align: center; margin: 25px 0; padding: 15px; border: 1px dashed var(--accent); border-radius: 10px; background: #fff; }
+        .image-box img { max-width: 100%; height: auto; border-radius: 5px; }
+
+        .quiz-section { background: #fff5f2; padding: 30px; border-radius: 10px; border: 1px solid var(--accent); margin-top: 40px; }
+        .q-item { margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        .q-text { font-weight: bold; display: block; margin-bottom: 10px; }
+        .option { display: block; margin: 5px 0; cursor: pointer; padding: 8px; border-radius: 5px; transition: 0.3s; }
+        .option:hover { background: #fceae6; }
+        .btn-check { background: var(--accent); color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 18px; }
+        #quiz-res { text-align: center; font-size: 1.4em; margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">TRANG CHỦ</a>
+        <a href="lop10.html">LỚP 10</a>
+        <a href="lop11.html" style="color: var(--accent);">LỚP 11</a>
+        <a href="lop12.html">LỚP 12</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>BÀI HỌC LỚP 11</h3>
+            <a href="lop11-bai1.html">Bài 1: Cạnh tranh kinh tế</a>
+            <a href="lop11-bai2.html">Bài 2: Cung - cầu</a>
+            <a href="lop11-bai3.html">Bài 3: Lạm phát</a>
+            <a href="lop11-bai4.html" class="active">Bài 4: Thất nghiệp</a>
+        </div>
+
+        <div class="main-content">
+            <div class="lesson-card">
+                <h1>BÀI 4: THẤT NGHIỆP TRONG NỀN KINH TẾ THỊ TRƯỜNG</h1>
+
+                <h2>I. MỤC TIÊU BÀI HỌC</h2>
+                <ul>
+                    <li>Nêu được khái niệm thất nghiệp và các loại hình thất nghiệp cơ bản.</li>
+                    <li>Giải thích được nguyên nhân và hậu quả của thất nghiệp đối với cá nhân và xã hội.</li>
+                    <li>Xác định được trách nhiệm của bản thân trong việc học tập, rèn luyện để hạn chế thất nghiệp trong tương lai.</li>
+                </ul>
+
+                <h2>II. NỘI DUNG CHI TIẾT</h2>
+                <h3>1. Khái niệm và các loại hình thất nghiệp</h3>
+                <p><b>Thất nghiệp</b> là tình trạng những người trong độ tuổi lao động, có khả năng lao động, đang tìm kiếm việc làm nhưng chưa có việc làm.</p>
+                <ul>
+                    <li><b>Thất nghiệp tự nguyện:</b> Xảy ra khi người lao động không muốn làm việc tại mức lương hiện tại.</li>
+                    <li><b>Thất nghiệp không tự nguyện:</b> Người lao động muốn làm việc nhưng không tìm được việc.</li>
+                    <li><b>Thất nghiệp chu kỳ:</b> Gắn liền với sự suy thoái kinh tế.</li>
+                    <li><b>Thất nghiệp cơ cấu:</b> Do sự thay đổi về kỹ thuật, công nghệ.</li>
+                </ul>
+
+                <div class="image-box">
+                    <img src="https://via.placeholder.com/600x300.png?text=Bieu+Do+Ti+Le+That+Nghiep" alt="Biểu đồ thất nghiệp">
+                    <p><i>Hình 4.1: Tỉ lệ thất nghiệp tại Việt Nam phân theo nhóm ngành (Tham khảo SGK trang 24)</i></p>
+                </div>
+
+                <h3>2. Nguyên nhân dẫn đến thất nghiệp</h3>
+                <p>- Suy thoái kinh tế làm giảm nhu cầu lao động.</p>
+                <p>- Sự phát triển của máy móc, AI thay thế sức người.</p>
+                <p>- Kỹ năng của người lao động không đáp ứng được yêu cầu của doanh nghiệp (mất cân đối cung - cầu lao động).</p>
+
+                <h3>3. Hậu quả và chính sách kiềm chế</h3>
+                <p>Thất nghiệp gây lãng phí nguồn lực, làm giảm thu nhập gia đình và tăng tệ nạn xã hội. Nhà nước hỗ trợ qua bảo hiểm thất nghiệp, đào tạo lại nghề và các gói kích cầu kinh tế.</p>
+
+                <div class="quiz-section">
+                    <h2>III. LUYỆN TẬP (10 CÂU HỎI)</h2>
+                    <div id="quiz-content">
+                        <div class="q-item">
+                            <span class="q-text">Câu 1: Đối tượng nào sau đây được coi là thất nghiệp?</span>
+                            <label class="option"><input type="radio" name="q1" value="1"> A. Người trong độ tuổi lao động, có khả năng lao động đang tìm việc</label>
+                            <label class="option"><input type="radio" name="q1" value="0"> B. Người nội trợ không có nhu cầu tìm việc</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 2: Thất nghiệp gắn liền với sự suy thoái của nền kinh tế gọi là?</span>
+                            <label class="option"><input type="radio" name="q2" value="1"> A. Thất nghiệp chu kỳ</label>
+                            <label class="option"><input type="radio" name="q2" value="0"> B. Thất nghiệp cơ cấu</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 3: Đâu là hậu quả trực tiếp của thất nghiệp đối với cá nhân?</span>
+                            <label class="option"><input type="radio" name="q3" value="1"> A. Thu nhập giảm sút, đời sống khó khăn</label>
+                            <label class="option"><input type="radio" name="q3" value="0"> B. Được Nhà nước trợ cấp vô thời hạn</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 4: Khi robot thay thế công nhân trong nhà máy, loại thất nghiệp nào xuất hiện?</span>
+                            <label class="option"><input type="radio" name="q4" value="1"> A. Thất nghiệp công nghệ/cơ cấu</label>
+                            <label class="option"><input type="radio" name="q4" value="0"> B. Thất nghiệp tự nguyện</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 5: Nhà nước thực hiện chính sách nào để hỗ trợ người thất nghiệp?</span>
+                            <label class="option"><input type="radio" name="q5" value="1"> A. Bảo hiểm thất nghiệp và tư vấn việc làm</label>
+                            <label class="option"><input type="radio" name="q5" value="0"> B. Bắt buộc các công ty phải nhận người lao động</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 6: Thất nghiệp do người lao động muốn nghỉ việc để tìm nơi tốt hơn gọi là?</span>
+                            <label class="option"><input type="radio" name="q6" value="1"> A. Thất nghiệp tự nguyện (thất nghiệp tạm thời)</label>
+                            <label class="option"><input type="radio" name="q6" value="0"> B. Thất nghiệp không tự nguyện</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 7: Tỉ lệ thất nghiệp tăng cao là dấu hiệu của?</span>
+                            <label class="option"><input type="radio" name="q7" value="1"> A. Nền kinh tế đang gặp khó khăn/suy thoái</label>
+                            <label class="option"><input type="radio" name="q7" value="0"> B. Nền kinh tế đang phát triển nóng</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 8: Cách tốt nhất để học sinh phòng tránh thất nghiệp trong tương lai là?</span>
+                            <label class="option"><input type="radio" name="q8" value="1"> A. Nỗ lực học tập và rèn luyện kỹ năng nghề nghiệp</label>
+                            <label class="option"><input type="radio" name="q8" value="0"> B. Chỉ cần có bằng cấp là đủ</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 9: Thất nghiệp gây ra lãng phí nguồn lực nào lớn nhất?</span>
+                            <label class="option"><input type="radio" name="q9" value="1"> A. Nguồn nhân lực</label>
+                            <label class="option"><input type="radio" name="q9" value="0"> B. Nguồn vốn tiền tệ</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 10: "Thất nghiệp xảy ra do thiếu hụt tổng cầu" thường xuất hiện vào lúc?</span>
+                            <label class="option"><input type="radio" name="q10" value="1"> A. Khủng hoảng kinh tế</label>
+                            <label class="option"><input type="radio" name="q10" value="0"> B. Lễ hội mua sắm cuối năm</label>
+                        </div>
+                    </div>
+                    <button class="btn-check" onclick="checkQuiz()">KIỂM TRA KẾT QUẢ</button>
+                    <div id="quiz-res"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkQuiz() {
+            let correct = 0;
+            for(let i=1; i<=10; i++) {
+                let r = document.querySelector('input[name="q'+i+'"]:checked');
+                if(r && r.value === "1") correct++;
+            }
+            let res = document.getElementById("quiz-res");
+            res.innerHTML = "Kết quả: " + correct + "/10 câu đúng!";
+            res.style.color = correct >= 8 ? "#27ae60" : (correct >= 5 ? "#e67e22" : "#e74c3c");
+        }
+    </script>
+</body>
+</html>
