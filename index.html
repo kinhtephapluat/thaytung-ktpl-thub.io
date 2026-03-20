@@ -2,26 +2,121 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Website Kinh tế & Pháp luật - Thầy Tùng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinh Phục Kiến Thức Kinh Tế & Pháp Luật - Thầy Tùng</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f4f4; }
-        .navbar { background: #2c3e50; display: flex; justify-content: center; padding: 15px; position: sticky; top: 0; }
-        .navbar a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
-        .navbar a:hover { color: #3498db; }
-        .hero { text-align: center; padding: 100px 20px; background: white; margin: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        :root {
+            --primary-navy: #1f2a3a; /* Giữ tông xanh đậm chuyên nghiệp của thầy */
+            --light-white: #ffffff;
+            --class-10: #3498db; /* Xanh dương - Khoa học */
+            --class-11: #e67e22; /* Đỏ cam - Sôi động */
+            --class-12: #27ae60; /* Xanh lá - Bền vững */
+            --text-dark: #2c3e50;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f1f3f5; color: var(--text-dark); }
+        
+        /* 1. THANH MENU (GIỮ NGUYÊN CỦA THẦY NHƯNG CHỈNH LẠI CHÚT ÍT) */
+        .navbar { background: var(--primary-navy); display: flex; justify-content: center; padding: 18px 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.2); position: sticky; top: 0; z-index: 1000; }
+        .navbar a { color: var(--light-white); text-decoration: none; margin: 0 25px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+        .navbar a:hover { color: var(--class-12); transform: scale(1.1); }
+        
+        /* 2. KHU VỰC HERO (CHÀO MỪNG CHÍNH - THU HÚT NGAY) */
+        .hero { background: linear-gradient(135deg, var(--primary-navy) 0%, #34495e 100%); color: var(--light-white); padding: 100px 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .hero h1 { margin: 0; font-size: 3.2em; font-weight: 800; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+        .hero p { margin-top: 15px; font-size: 1.3em; opacity: 0.9; }
+        .hero .highlight { color: var(--class-12); font-weight: 700; }
+
+        .class-selection-title { text-align: center; margin-top: 50px; margin-bottom: 20px; font-size: 1.8em; font-weight: bold; color: var(--primary-navy); text-transform: uppercase; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px 80px; display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px; }
+
+        /* 3. THIẾT KẾ CÁC THẺ LỚP HỌC 3D BẮT MẮT */
+        .class-card { background: var(--light-white); border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow: 0.3s; display: flex; flex-direction: column; cursor: pointer; border: 1px solid #eee; }
+        .class-card:hover { transform: translateY(-15px); box-shadow: 0 20px 45px rgba(0,0,0,0.15); }
+        
+        /* Khu vực hình ảnh minh họa cho môn KTPL */
+        .card-image-box { height: 200px; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; position: relative; }
+        .card-image-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0.3; }
+        
+        /* Màu sắc & Ảnh minh họa (Placeholder) - Thầy sẽ thay ảnh thật ở đây */
+        .bg-10 { background-image: url('https://via.placeholder.com/400x200.png?text=Bieu+Do+Tang+Truong+KT'); } /* Thay bằng ảnh biểu đồ/thị trường */
+        .overlay-10 { background-color: var(--class-10); }
+        
+        .bg-11 { background-image: url('https://via.placeholder.com/400x200.png?text=Phap+Luat+Cuoc+Song'); } /* Thay bằng ảnh Quốc kỳ/Hiến pháp */
+        .overlay-11 { background-color: var(--class-11); }
+        
+        .bg-12 { background-image: url('https://via.placeholder.com/400x200.png?text=An+Sinh+Xa+Hoi'); } /* Thay bằng ảnh an sinh/phát triển bền vững */
+        .overlay-12 { background-color: var(--class-12); }
+
+        .card-header-text { position: relative; z-index: 10; color: white; font-size: 2.2em; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+
+        .card-body { padding: 30px; text-align: center; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .card-body p { color: #777; font-size: 1.1em; margin-bottom: 20px; line-height: 1.5; }
+        
+        .btn-enter { display: inline-block; padding: 15px 30px; border-radius: 50px; text-decoration: none; color: white; font-weight: bold; text-transform: uppercase; font-size: 1em; letter-spacing: 1px; transition: 0.2s; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .btn-enter-10 { background: var(--class-10); }
+        .btn-enter-11 { background: var(--class-11); }
+        .btn-enter-12 { background: var(--class-12); }
+        
+        .btn-enter:hover { transform: scale(1.05); filter: brightness(110%); }
+
+        footer { text-align: center; padding: 40px; background: #eee; border-top: 1px solid #ddd; color: #666; font-weight: 500; }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">TRANG CHỦ</a>
-        <a href="lop10.html">LỚP 10</a>
-        <a href="lop11.html">LỚP 11</a>
-        <a href="lop12.html">LỚP 12</a>
+
+<div class="navbar">
+    <a href="index.html">TRANG CHỦ</a>
+    <a href="lop10.html">LỚP 10</a>
+    <a href="lop11.html">LỚP 11</a>
+    <a href="lop12.html">LỚP 12</a>
+</div>
+
+<div class="hero">
+    <h1>CHINH PHỤC TRI THỨC <span class="highlight">KT&PL</span></h1>
+    <p>Thầy Tùng đồng hành cùng các em trên con đường trở thành những <span class="highlight">công dân toàn cầu</span> ưu tú.</p>
+</div>
+
+<p class="class-selection-title">HÃY CHỌN KHỐI LỚP ĐỂ BẮT ĐẦU HỌC TẬP</p>
+
+<div class="container">
+    <div class="class-card">
+        <div class="card-image-box bg-10">
+            <div class="card-image-overlay overlay-10"></div>
+            <div class="card-header-text">LỚP 10</div>
+        </div>
+        <div class="card-body">
+            <p>Khám phá nền móng của kinh tế học & Pháp luật đại cương. Tìm hiểu về "Dòng chảy hàng hóa" & "Chủ thể kinh tế".</p>
+            <a href="lop10.html" class="btn-enter btn-enter-10">Vào học ngay</a>
+        </div>
     </div>
-    <div class="hero">
-        <h1>Chào mừng các em học sinh đến với môn Kinh tế & Pháp luật</h1>
-        <p>Thầy Tùng đồng hành cùng các em chinh phục tri thức.</p>
-        <p><i>Hãy chọn khối lớp ở thanh Menu phía trên để bắt đầu học tập.</i></p>
+
+    <div class="class-card">
+        <div class="card-image-box bg-11">
+            <div class="card-image-overlay overlay-11"></div>
+            <div class="card-header-text">LỚP 11</div>
+        </div>
+        <div class="card-body">
+            <p>Đi sâu vào các hiện tượng kinh tế vĩ mô quan trọng: Cạnh tranh, Cung - cầu, Lạm phát & Thất nghiệp.</p>
+            <a href="lop11.html" class="btn-enter btn-enter-11">Vào học ngay</a>
+        </div>
     </div>
+
+    <div class="class-card">
+        <div class="card-image-box bg-12">
+            <div class="card-image-overlay overlay-12"></div>
+            <div class="card-header-text">LỚP 12</div>
+        </div>
+        <div class="card-body">
+            <p>Hoàn thiện tri thức về Tăng trưởng & Phát triển, Hội nhập kinh tế quốc tế & các chính sách An sinh xã hội.</p>
+            <a href="lop12.html" class="btn-enter btn-enter-12">Vào học ngay</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 Bản quyền thuộc về Thầy Tùng - Đồng hành cùng công dân thế kỷ 21.
+</footer>
+
 </body>
 </html>
