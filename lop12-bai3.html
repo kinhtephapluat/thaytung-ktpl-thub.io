@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3: Bảo hiểm trong nền kinh tế thị trường</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #27ae60; --bg: #f0f9f4; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; flex-direction: column; background: var(--bg); line-height: 1.6; }
+        .navbar { background: var(--primary); display: flex; justify-content: center; padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        .navbar a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
+        
+        .container { display: flex; }
+        .sidebar { width: 280px; background: white; padding: 20px; border-right: 1px solid #ddd; height: 100vh; position: sticky; top: 50px; overflow-y: auto; }
+        .sidebar h3 { color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+        .sidebar a { display: block; padding: 12px; color: #333; text-decoration: none; border-bottom: 1px solid #eee; font-size: 14px; }
+        .sidebar a.active { background: var(--accent); color: white; border-radius: 4px; }
+
+        .main-content { flex: 1; padding: 40px; max-width: 900px; margin: auto; }
+        .lesson-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        
+        h1 { color: var(--accent); text-transform: uppercase; border-left: 6px solid var(--accent); padding-left: 15px; }
+        h2 { color: var(--primary); background: #eef7f2; padding: 10px; border-radius: 5px; margin-top: 30px; }
+        
+        .image-box { text-align: center; margin: 25px 0; padding: 15px; border: 1px dashed var(--accent); border-radius: 10px; background: #fff; }
+        .image-box img { max-width: 100%; height: auto; border-radius: 5px; }
+
+        .quiz-section { background: #f0fff4; padding: 30px; border-radius: 10px; border: 1px solid var(--accent); margin-top: 40px; }
+        .q-item { margin-bottom: 20px; border-bottom: 1px solid #e0eee6; padding-bottom: 15px; }
+        .q-text { font-weight: bold; display: block; margin-bottom: 10px; }
+        .option { display: block; margin: 5px 0; cursor: pointer; padding: 8px; border-radius: 5px; transition: 0.3s; }
+        .option:hover { background: #e2f3e9; }
+        .btn-check { background: var(--accent); color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 18px; }
+        #quiz-res { text-align: center; font-size: 1.4em; margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">TRANG CHỦ</a>
+        <a href="lop10.html">LỚP 10</a>
+        <a href="lop11.html">LỚP 11</a>
+        <a href="lop12.html" style="color: var(--accent);">LỚP 12</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>BÀI HỌC LỚP 12</h3>
+            <a href="lop12-bai1.html">Bài 1: Tăng trưởng & Phát triển KT</a>
+            <a href="lop12-bai2.html">Bài 2: Hội nhập kinh tế quốc tế</a>
+            <a href="lop12-bai3.html" class="active">Bài 3: Bảo hiểm</a>
+            <a href="lop12-bai4.html">Bài 4: An sinh xã hội</a>
+        </div>
+
+        <div class="main-content">
+            <div class="lesson-card">
+                <h1>BÀI 3: BẢO HIỂM TRONG NỀN KINH TẾ THỊ TRƯỜNG</h1>
+
+                <h2>I. MỤC TIÊU BÀI HỌC</h2>
+                <ul>
+                    <li>Nêu được khái niệm bảo hiểm và vai trò của bảo hiểm đối với cá nhân, gia đình và xã hội.</li>
+                    <li>Phân biệt được các loại hình bảo hiểm cơ bản (Bảo hiểm xã hội, Bảo hiểm y tế, Bảo hiểm thương mại).</li>
+                    <li>Có thái độ đúng đắn và tuyên truyền cho người thân tham gia các loại hình bảo hiểm phù hợp.</li>
+                </ul>
+
+                <h2>II. NỘI DUNG CHI TIẾT</h2>
+                <h3>1. Khái niệm và Vai trò của Bảo hiểm</h3>
+                <p><b>Bảo hiểm</b> là một hoạt động qua đó cá nhân, tổ chức đóng một khoản phí (phí bảo hiểm) để được cam kết bồi thường hoặc chi trả khi xảy ra sự kiện bảo hiểm (rủi ro, tai nạn, ốm đau...).</p>
+                <p><b>Vai trò:</b> Giúp ổn định tài chính khi gặp rủi ro, huy động vốn cho nền kinh tế, góp phần đảm bảo an sinh xã hội.</p>
+
+                <div class="image-box">
+                    <img src="https://via.placeholder.com/600x300.png?text=Cac+Loai+Hinh+Bao+Hiem" alt="Các loại hình bảo hiểm">
+                    <p><i>Hình 3.1: Hệ thống các loại hình bảo hiểm tại Việt Nam (Sách GK trang 22)</i></p>
+                </div>
+
+                <h3>2. Các loại hình bảo hiểm cơ bản</h3>
+                <ul>
+                    <li><b>Bảo hiểm xã hội:</b> Do Nhà nước tổ chức, nhằm thay thế hoặc bù đắp một phần thu nhập (Hưu trí, tử tuất, thai sản...).</li>
+                    <li><b>Bảo hiểm y tế:</b> Chi trả một phần hoặc toàn bộ chi phí khám chữa bệnh.</li>
+                    <li><b>Bảo hiểm thất nghiệp:</b> Hỗ trợ người lao động khi bị mất việc làm.</li>
+                    <li><b>Bảo hiểm thương mại:</b> Do các công ty bảo hiểm thực hiện vì mục đích lợi nhuận (Bảo hiểm nhân thọ, bảo hiểm tài sản...).</li>
+                </ul>
+
+                <h3>3. Ý nghĩa của việc tham gia bảo hiểm</h3>
+                <p>Tham gia bảo hiểm là cách "chia sẻ rủi ro" dựa trên nguyên tắc số đông bù số ít, giúp xã hội phát triển ổn định và bền vững hơn.</p>
+
+                <div class="quiz-section">
+                    <h2>III. LUYỆN TẬP TRẮC NGHIỆM (10 CÂU)</h2>
+                    <div id="quiz-content">
+                        <div class="q-item">
+                            <span class="q-text">Câu 1: Bảo hiểm là hình thức chuyển giao rủi ro từ ai sang ai?</span>
+                            <label class="option"><input type="radio" name="q1" value="1"> A. Từ người tham gia sang tổ chức bảo hiểm</label>
+                            <label class="option"><input type="radio" name="q1" value="0"> B. Từ tổ chức bảo hiểm sang người tham gia</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 2: Loại hình bảo hiểm nào do Nhà nước tổ chức và không vì mục đích lợi nhuận?</span>
+                            <label class="option"><input type="radio" name="q2" value="1"> A. Bảo hiểm xã hội và y tế</label>
+                            <label class="option"><input type="radio" name="q2" value="0"> B. Bảo hiểm nhân thọ thương mại</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 3: Người lao động được hưởng chế độ thai sản khi tham gia loại bảo hiểm nào?</span>
+                            <label class="option"><input type="radio" name="q3" value="1"> A. Bảo hiểm xã hội bắt buộc</label>
+                            <label class="option"><input type="radio" name="q3" value="0"> B. Bảo hiểm hỏa hoạn</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 4: Bảo hiểm y tế giúp người tham gia giảm bớt gánh nặng về?</span>
+                            <label class="option"><input type="radio" name="q4" value="1"> A. Chi phí khám chữa bệnh</label>
+                            <label class="option"><input type="radio" name="q4" value="0"> B. Học phí trường học</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 5: Nguyên tắc cơ bản của bảo hiểm là gì?</span>
+                            <label class="option"><input type="radio" name="q5" value="1"> A. Lấy số đông bù số ít</label>
+                            <label class="option"><input type="radio" name="q5" value="0"> B. Lấy người giàu bù người nghèo</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 6: Bảo hiểm nhân thọ thuộc loại hình bảo hiểm nào?</span>
+                            <label class="option"><input type="radio" name="q6" value="1"> A. Bảo hiểm thương mại</label>
+                            <label class="option"><input type="radio" name="q6" value="0"> B. Bảo hiểm xã hội</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 7: Quyền lợi hưu trí thuộc về loại hình bảo hiểm nào?</span>
+                            <label class="option"><input type="radio" name="q7" value="1"> A. Bảo hiểm xã hội</label>
+                            <label class="option"><input type="radio" name="q7" value="0"> B. Bảo hiểm tài sản</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 8: Khi tham gia bảo hiểm, người dân cần phải đóng khoản phí gì?</span>
+                            <label class="option"><input type="radio" name="q8" value="1"> A. Phí bảo hiểm</label>
+                            <label class="option"><input type="radio" name="q8" value="0"> B. Tiền phạt vi phạm</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 9: Vai trò của bảo hiểm đối với nền kinh tế là gì?</span>
+                            <label class="option"><input type="radio" name="q9" value="1"> A. Huy động vốn nhàn rỗi để đầu tư</label>
+                            <label class="option"><input type="radio" name="q9" value="0"> B. Làm tăng lạm phát</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 10: Tham gia bảo hiểm đầy đủ góp phần thực hiện chính sách nào của Nhà nước?</span>
+                            <label class="option"><input type="radio" name="q10" value="1"> A. An sinh xã hội</label>
+                            <label class="option"><input type="radio" name="q10" value="0"> B. Hội nhập quốc tế</label>
+                        </div>
+                    </div>
+                    <button class="btn-check" onclick="checkPoints()">KIỂM TRA ĐIỂM SỐ</button>
+                    <div id="quiz-res"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkPoints() {
+            let correct = 0;
+            for(let i=1; i<=10; i++) {
+                let r = document.querySelector('input[name="q'+i+'"]:checked');
+                if(r && r.value === "1") correct++;
+            }
+            let res = document.getElementById("quiz-res");
+            res.innerHTML = "Em đạt được: " + correct + "/10 câu đúng!";
+            res.style.color = correct >= 8 ? "#27ae60" : (correct >= 5 ? "#f39c12" : "#e74c3c");
+        }
+    </script>
+</body>
+</html>
