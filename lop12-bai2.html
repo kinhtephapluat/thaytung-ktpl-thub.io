@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2: Hội nhập kinh tế quốc tế</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #27ae60; --bg: #f0f9f4; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; flex-direction: column; background: var(--bg); line-height: 1.6; }
+        .navbar { background: var(--primary); display: flex; justify-content: center; padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        .navbar a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
+        
+        .container { display: flex; }
+        .sidebar { width: 280px; background: white; padding: 20px; border-right: 1px solid #ddd; height: 100vh; position: sticky; top: 50px; overflow-y: auto; }
+        .sidebar h3 { color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+        .sidebar a { display: block; padding: 12px; color: #333; text-decoration: none; border-bottom: 1px solid #eee; font-size: 14px; }
+        .sidebar a.active { background: var(--accent); color: white; border-radius: 4px; }
+
+        .main-content { flex: 1; padding: 40px; max-width: 900px; margin: auto; }
+        .lesson-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        
+        h1 { color: var(--accent); text-transform: uppercase; border-left: 6px solid var(--accent); padding-left: 15px; }
+        h2 { color: var(--primary); background: #eef7f2; padding: 10px; border-radius: 5px; margin-top: 30px; }
+        
+        .image-box { text-align: center; margin: 25px 0; padding: 15px; border: 1px dashed var(--accent); border-radius: 10px; background: #fff; }
+        .image-box img { max-width: 100%; height: auto; border-radius: 5px; }
+
+        .quiz-section { background: #f0fff4; padding: 30px; border-radius: 10px; border: 1px solid var(--accent); margin-top: 40px; }
+        .q-item { margin-bottom: 20px; border-bottom: 1px solid #e0eee6; padding-bottom: 15px; }
+        .q-text { font-weight: bold; display: block; margin-bottom: 10px; }
+        .option { display: block; margin: 5px 0; cursor: pointer; padding: 8px; border-radius: 5px; transition: 0.3s; }
+        .option:hover { background: #e2f3e9; }
+        .btn-check { background: var(--accent); color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 18px; }
+        #quiz-res { text-align: center; font-size: 1.4em; margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">TRANG CHỦ</a>
+        <a href="lop10.html">LỚP 10</a>
+        <a href="lop11.html">LỚP 11</a>
+        <a href="lop12.html" style="color: var(--accent);">LỚP 12</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>BÀI HỌC LỚP 12</h3>
+            <a href="lop12-bai1.html">Bài 1: Tăng trưởng & Phát triển KT</a>
+            <a href="lop12-bai2.html" class="active">Bài 2: Hội nhập kinh tế quốc tế</a>
+            <a href="lop12-bai3.html">Bài 3: Bảo hiểm</a>
+        </div>
+
+        <div class="main-content">
+            <div class="lesson-card">
+                <h1>BÀI 2: HỘI NHẬP KINH TẾ QUỐC TẾ</h1>
+
+                <h2>I. MỤC TIÊU BÀI HỌC</h2>
+                <ul>
+                    <li>Giải thích được khái niệm và các hình thức hội nhập kinh tế quốc tế.</li>
+                    <li>Phân tích được tính tất yếu khách quan của hội nhập kinh tế quốc tế.</li>
+                    <li>Đánh giá được những cơ hội và thách thức của hội nhập kinh tế đối với Việt Nam.</li>
+                </ul>
+
+                <h2>II. NỘI DUNG CHI TIẾT</h2>
+                <h3>1. Khái niệm hội nhập kinh tế quốc tế</h3>
+                <p>Là quá trình một quốc gia thực hiện việc gắn kết nền kinh tế của mình với nền kinh tế các quốc gia khác, khu vực và toàn cầu thông qua các nỗ lực tự do hóa thương mại.</p>
+
+                <div class="image-box">
+                    <img src="https://via.placeholder.com/600x300.png?text=Cac+To+Chuc+Kinh+Te+Quoc+Te" alt="Các tổ chức kinh tế">
+                    <p><i>Hình 2.1: Việt Nam tham gia tích cực vào các tổ chức kinh tế thế giới (Sách GK trang 14)</i></p>
+                </div>
+
+                <h3>2. Các hình thức hội nhập</h3>
+                <ul>
+                    <li><b>Hội nhập song phương:</b> Thỏa thuận giữa 2 quốc gia (Ví dụ: FTA Việt Nam - Hàn Quốc).</li>
+                    <li><b>Hội nhập khu vực:</b> Gắn kết các quốc gia trong cùng khu vực (Ví dụ: ASEAN).</li>
+                    <li><b>Hội nhập đa phương:</b> Quy mô toàn cầu (Ví dụ: WTO).</li>
+                </ul>
+
+                <h3>3. Cơ hội và Thách thức</h3>
+                <p><b>Cơ hội:</b> Mở rộng thị trường xuất khẩu, thu hút vốn đầu tư FDI, tiếp cận công nghệ hiện đại.</p>
+                <p><b>Thách thức:</b> Cạnh tranh gay gắt, nguy cơ tụt hậu, vấn đề về chủ quyền kinh tế và bản sắc văn hóa.</p>
+
+                <div class="quiz-section">
+                    <h2>III. LUYỆN TẬP TRẮC NGHIỆM</h2>
+                    <div id="quiz-content">
+                        <div class="q-item">
+                            <span class="q-text">Câu 1: Hình thức hội nhập kinh tế giữa hai quốc gia được gọi là?</span>
+                            <label class="option"><input type="radio" name="q1" value="1"> A. Hội nhập song phương</label>
+                            <label class="option"><input type="radio" name="q1" value="0"> B. Hội nhập đa phương</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 2: Việt Nam chính thức trở thành thành viên của WTO vào năm nào?</span>
+                            <label class="option"><input type="radio" name="q2" value="1"> A. 2007</label>
+                            <label class="option"><input type="radio" name="q2" value="0"> B. 1995</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 3: WTO là từ viết tắt của tổ chức nào?</span>
+                            <label class="option"><input type="radio" name="q3" value="1"> A. Tổ chức Thương mại Thế giới</label>
+                            <label class="option"><input type="radio" name="q3" value="0"> B. Quỹ Tiền tệ Quốc tế</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 4: Một trong những thách thức lớn nhất của hội nhập kinh tế là?</span>
+                            <label class="option"><input type="radio" name="q4" value="1"> A. Cạnh tranh gay gắt từ hàng hóa ngoại nhập</label>
+                            <label class="option"><input type="radio" name="q4" value="0"> B. Không thể xuất khẩu hàng hóa ra nước ngoài</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 5: Tham gia ASEAN là hình thức hội nhập kinh tế cấp độ nào?</span>
+                            <label class="option"><input type="radio" name="q5" value="1"> A. Hội nhập khu vực</label>
+                            <label class="option"><input type="radio" name="q5" value="0"> B. Hội nhập song phương</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 6: Hội nhập kinh tế giúp chúng ta tiếp cận nhanh nhất với yếu tố nào?</span>
+                            <label class="option"><input type="radio" name="q6" value="1"> A. Khoa học và công nghệ hiện đại</label>
+                            <label class="option"><input type="radio" name="q6" value="0"> B. Các loại hàng hóa lỗi thời</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 7: Tự do hóa thương mại là nội dung cốt lõi của?</span>
+                            <label class="option"><input type="radio" name="q7" value="1"> A. Hội nhập kinh tế quốc tế</label>
+                            <label class="option"><input type="radio" name="q7" value="0"> B. Đóng cửa nền kinh tế</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 8: Để hội nhập thành công, các doanh nghiệp trong nước cần phải?</span>
+                            <label class="option"><input type="radio" name="q8" value="1"> A. Nâng cao năng lực cạnh tranh và chất lượng sản phẩm</label>
+                            <label class="option"><input type="radio" name="q8" value="0"> B. Chờ đợi sự bảo hộ của Nhà nước</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 9: Hội nhập kinh tế quốc tế là một quá trình như thế nào?</span>
+                            <label class="option"><input type="radio" name="q9" value="1"> A. Tất yếu khách quan</label>
+                            <label class="option"><input type="radio" name="q9" value="0"> B. Có thể tham gia hoặc không tùy ý</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 10: FDI là từ viết tắt dùng để chỉ?</span>
+                            <label class="option"><input type="radio" name="q10" value="1"> A. Đầu tư trực tiếp nước ngoài</label>
+                            <label class="option"><input type="radio" name="q10" value="0"> B. Viện trợ không hoàn lại</label>
+                        </div>
+                    </div>
+                    <button class="btn-check" onclick="calculateScore()">NỘP BÀI KIỂM TRA</button>
+                    <div id="quiz-res"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateScore() {
+            let correct = 0;
+            for(let i=1; i<=10; i++) {
+                let r = document.querySelector('input[name="q'+i+'"]:checked');
+                if(r && r.value === "1") correct++;
+            }
+            let res = document.getElementById("quiz-res");
+            res.innerHTML = "Bạn đã đúng: " + correct + "/10 câu!";
+            res.style.color = correct >= 8 ? "#27ae60" : (correct >= 5 ? "#f39c12" : "#e74c3c");
+        }
+    </script>
+</body>
+</html>
