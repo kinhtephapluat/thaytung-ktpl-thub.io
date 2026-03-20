@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3: Lạm phát trong nền kinh tế thị trường</title>
+    <style>
+        :root { --primary: #2c3e50; --accent: #e74c3c; --bg: #fdf2f0; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; flex-direction: column; background: var(--bg); line-height: 1.6; }
+        .navbar { background: var(--primary); display: flex; justify-content: center; padding: 15px; position: sticky; top: 0; z-index: 1000; }
+        .navbar a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
+        
+        .container { display: flex; }
+        .sidebar { width: 280px; background: white; padding: 20px; border-right: 1px solid #ddd; height: 100vh; position: sticky; top: 50px; overflow-y: auto; }
+        .sidebar h3 { color: var(--accent); border-bottom: 2px solid var(--accent); padding-bottom: 10px; }
+        .sidebar a { display: block; padding: 12px; color: #333; text-decoration: none; border-bottom: 1px solid #eee; font-size: 14px; }
+        .sidebar a.active { background: var(--accent); color: white; border-radius: 4px; }
+
+        .main-content { flex: 1; padding: 40px; max-width: 900px; margin: auto; }
+        .lesson-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        
+        h1 { color: var(--accent); text-transform: uppercase; border-left: 6px solid var(--accent); padding-left: 15px; }
+        h2 { color: var(--primary); background: #eee; padding: 10px; border-radius: 5px; margin-top: 30px; }
+        
+        .image-box { text-align: center; margin: 25px 0; padding: 15px; border: 1px dashed var(--accent); border-radius: 10px; background: #fff; }
+        .image-box img { max-width: 100%; height: auto; border-radius: 5px; }
+
+        .quiz-section { background: #fff5f2; padding: 30px; border-radius: 10px; border: 1px solid var(--accent); margin-top: 40px; }
+        .q-item { margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+        .q-text { font-weight: bold; display: block; margin-bottom: 10px; }
+        .option { display: block; margin: 5px 0; cursor: pointer; padding: 8px; border-radius: 5px; transition: 0.3s; }
+        .option:hover { background: #fceae6; }
+        .btn-check { background: var(--accent); color: white; border: none; padding: 15px; width: 100%; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 18px; }
+        #quiz-res { text-align: center; font-size: 1.4em; margin-top: 20px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">TRANG CHỦ</a>
+        <a href="lop10.html">LỚP 10</a>
+        <a href="lop11.html" style="color: var(--accent);">LỚP 11</a>
+        <a href="lop12.html">LỚP 12</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>BÀI HỌC LỚP 11</h3>
+            <a href="lop11-bai1.html">Bài 1: Cạnh tranh kinh tế</a>
+            <a href="lop11-bai2.html">Bài 2: Cung - cầu</a>
+            <a href="lop11-bai3.html" class="active">Bài 3: Lạm phát</a>
+            <a href="lop11-bai4.html">Bài 4: Thất nghiệp</a>
+        </div>
+
+        <div class="main-content">
+            <div class="lesson-card">
+                <h1>BÀI 3: LẠM PHÁT TRONG NỀN KINH TẾ THỊ TRƯỜNG</h1>
+
+                <h2>I. MỤC TIÊU BÀI HỌC</h2>
+                <ul>
+                    <li>Nêu được khái niệm lạm phát và các loại hình lạm phát cơ bản.</li>
+                    <li>Giải thích được nguyên nhân và hậu quả của lạm phát đối với đời sống.</li>
+                    <li>Biết cách ứng phó và ủng hộ các chính sách kiềm chế lạm phát của Nhà nước.</li>
+                </ul>
+
+                <h2>II. NỘI DUNG CHI TIẾT</h2>
+                <h3>1. Khái niệm và các mức độ lạm phát</h3>
+                <p><b>Lạm phát</b> là tình trạng mức giá chung của nền kinh tế tăng lên liên tục trong một khoảng thời gian nhất định.</p>
+                <ul>
+                    <li><b>Lạm phát vừa phải:</b> Dưới 10% (kích thích sản xuất).</li>
+                    <li><b>Lạm phát phi mã:</b> Từ 10% đến dưới 1000% (gây bất ổn).</li>
+                    <li><b>Siêu lạm phát:</b> Trên 1000% (kinh tế suy sụp).</li>
+                </ul>
+
+                <div class="image-box">
+                    <img src="https://via.placeholder.com/600x300.png?text=Bieu+Do+Chi+So+Gia+Tieu+Dung+CPI" alt="Biểu đồ CPI">
+                    <p><i>Hình 3.1: Biến động chỉ số giá tiêu dùng CPI qua các năm (Tham khảo SGK trang 18)</i></p>
+                </div>
+
+                <h3>2. Nguyên nhân dẫn đến lạm phát</h3>
+                <p>- Chi phí đẩy (giá nguyên liệu tăng).</p>
+                <p>- Cầu kéo (nhu cầu mua sắm tăng đột biến).</p>
+                <p>- Do phát hành quá nhiều tiền giấy vào lưu thông.</p>
+
+                <h3>3. Hậu quả của lạm phát</h3>
+                <p>Lạm phát cao làm giảm sức mua của đồng tiền, khiến đời sống người lao động khó khăn, gây tâm lý tích trữ hàng hóa và làm đình trệ sản xuất.</p>
+
+                <div class="quiz-section">
+                    <h2>III. LUYỆN TẬP (10 CÂU HỎI)</h2>
+                    <div id="quiz-content">
+                        <div class="q-item">
+                            <span class="q-text">Câu 1: Lạm phát là tình trạng mức giá chung của nền kinh tế?</span>
+                            <label class="option"><input type="radio" name="q1" value="1"> A. Tăng lên liên tục</label>
+                            <label class="option"><input type="radio" name="q1" value="0"> B. Giảm xuống liên tục</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 2: Mức độ lạm phát dưới 10% được gọi là gì?</span>
+                            <label class="option"><input type="radio" name="q2" value="1"> A. Lạm phát vừa phải</label>
+                            <label class="option"><input type="radio" name="q2" value="0"> B. Lạm phát phi mã</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 3: Khi lạm phát xảy ra, sức mua của đồng tiền sẽ?</span>
+                            <label class="option"><input type="radio" name="q3" value="1"> A. Giảm xuống</label>
+                            <label class="option"><input type="radio" name="q3" value="0"> B. Tăng lên</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 4: Đâu là nguyên nhân dẫn đến lạm phát?</span>
+                            <label class="option"><input type="radio" name="q4" value="1"> A. Chi phí sản xuất tăng cao</label>
+                            <label class="option"><input type="radio" name="q4" value="0"> B. Cung hàng hóa lớn hơn cầu</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 5: Đối tượng nào chịu thiệt hại nặng nhất khi lạm phát cao?</span>
+                            <label class="option"><input type="radio" name="q5" value="1"> A. Người có thu nhập cố định</label>
+                            <label class="option"><input type="radio" name="q5" value="0"> B. Người đầu cơ tích trữ hàng</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 6: Lạm phát phi mã tính theo năm là bao nhiêu?</span>
+                            <label class="option"><input type="radio" name="q6" value="1"> A. Từ 10% đến dưới 1000%</label>
+                            <label class="option"><input type="radio" name="q6" value="0"> B. Trên 1000%</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 7: Nhà nước kiềm chế lạm phát bằng cách nào?</span>
+                            <label class="option"><input type="radio" name="q7" value="1"> A. Thắt chặt tiền tệ, giảm chi tiêu công</label>
+                            <label class="option"><input type="radio" name="q7" value="0"> B. In thêm tiền giấy</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 8: Tâm lý phổ biến của người dân khi thấy lạm phát tăng cao là?</span>
+                            <label class="option"><input type="radio" name="q8" value="1"> A. Tăng cường tích trữ hàng hóa</label>
+                            <label class="option"><input type="radio" name="q8" value="0"> B. Gửi hết tiền vào ngân hàng</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 9: Khi lạm phát ở mức vừa phải (dưới 10%), nó có tác dụng gì?</span>
+                            <label class="option"><input type="radio" name="q9" value="1"> A. Kích thích sản xuất phát triển</label>
+                            <label class="option"><input type="radio" name="q9" value="0"> B. Làm đình trệ mọi hoạt động</label>
+                        </div>
+                        <div class="q-item">
+                            <span class="q-text">Câu 10: "Giá xăng tăng làm giá cước vận tải tăng theo" là ví dụ của loại lạm phát nào?</span>
+                            <label class="option"><input type="radio" name="q10" value="1"> A. Lạm phát do chi phí đẩy</label>
+                            <label class="option"><input type="radio" name="q10" value="0"> B. Lạm phát do cầu kéo</label>
+                        </div>
+                    </div>
+                    <button class="btn-check" onclick="checkQuiz()">KIỂM TRA ĐIỂM SỐ</button>
+                    <div id="quiz-res"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkQuiz() {
+            let correct = 0;
+            for(let i=1; i<=10; i++) {
+                let r = document.querySelector('input[name="q'+i+'"]:checked');
+                if(r && r.value === "1") correct++;
+            }
+            let res = document.getElementById("quiz-res");
+            res.innerHTML = "Em đúng: " + correct + "/10 câu!";
+            res.style.color = correct >= 8 ? "#27ae60" : (correct >= 5 ? "#e67e22" : "#e74c3c");
+        }
+    </script>
+</body>
+</html>
