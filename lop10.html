@@ -2,36 +2,129 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Lớp 10 - Kinh tế & Pháp luật</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lớp 10: Giáo dục Kinh tế - Thầy Phát</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; flex-direction: column; }
-        .navbar { background: #2c3e50; display: flex; justify-content: center; padding: 15px; width: 100%; }
+        :root {
+            --primary: #2c3e50;
+            --blue: #3498db;
+            --bg: #f4f7f6;
+            --white: #ffffff;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--bg); color: #333; }
+        
+        /* Navbar */
+        .navbar { background: var(--primary); display: flex; justify-content: center; padding: 15px; position: sticky; top: 0; z-index: 1000; }
         .navbar a { color: white; text-decoration: none; margin: 0 20px; font-weight: bold; }
-        .container { display: flex; min-height: 100vh; }
-        .sidebar { width: 250px; background: #ecf0f1; padding: 20px; border-right: 1px solid #ddd; }
-        .sidebar a { display: block; padding: 10px; color: #333; text-decoration: none; border-bottom: 1px solid #ccc; }
-        .sidebar a:hover { background: #d7dbdd; }
-        .main-content { flex: 1; padding: 40px; background: white; }
+        .navbar a:hover { color: var(--blue); }
+
+        .header-section { background: var(--blue); color: white; text-align: center; padding: 40px 20px; }
+        .header-section h1 { margin: 0; text-transform: uppercase; }
+
+        .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+
+        /* Chủ đề (Topic) */
+        .topic-container { margin-bottom: 25px; background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .topic-header { background: #eef7fc; padding: 20px; border-left: 6px solid var(--blue); display: flex; align-items: center; }
+        .topic-header h2 { margin: 0; font-size: 1.2em; color: var(--blue); text-transform: uppercase; }
+        .topic-header span { font-size: 1.5em; margin-right: 15px; }
+
+        /* Danh sách bài học */
+        .lesson-list { padding: 10px 0; }
+        .lesson-item { display: flex; align-items: center; padding: 15px 25px; border-bottom: 1px solid #f1f1f1; text-decoration: none; color: #555; transition: 0.3s; }
+        .lesson-item:last-child { border-bottom: none; }
+        .lesson-item:hover { background: #f9f9f9; padding-left: 35px; color: var(--blue); }
+        .lesson-item i { margin-right: 10px; color: #999; }
+
+        footer { text-align: center; padding: 30px; color: #888; }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">TRANG CHỦ</a>
-        <a href="lop10.html" style="color:#3498db">LỚP 10</a>
-        <a href="lop11.html">LỚP 11</a>
-        <a href="lop12.html">LỚP 12</a>
-    </div>
-    <div class="container">
-        <div class="sidebar">
-            <h3>DANH MỤC BÀI HỌC</h3>
-            <a href="lop10-bai1.html">Bài 1: Các hoạt động kinh tế</a>
-            <a href="lop10-bai2.html">Bài 2: Các chủ thể kinh tế</a>
-            <a href="lop10-bai3.html">Bài 3: Thị trường</a>
+
+<div class="navbar">
+    <a href="index.html">TRANG CHỦ</a>
+    <a href="lop10.html" style="color: var(--blue);">LỚP 10</a>
+    <a href="lop11.html">LỚP 11</a>
+    <a href="lop12.html">LỚP 12</a>
+    <a href="luyen-thi.html">LUYỆN THI</a>
+</div>
+
+<div class="header-section">
+    <h1>PHẦN MỘT: GIÁO DỤC KINH TẾ - LỚP 10</h1>
+    <p>Hệ thống bài học theo chương trình Kết nối tri thức</p>
+</div>
+
+<div class="container">
+
+    <div class="topic-container">
+        <div class="topic-header">
+            <span>⭐</span>
+            <h2>Chủ đề 1: Nền kinh tế và các chủ thể của nền kinh tế</h2>
         </div>
-        <div class="main-content">
-            <h1>Chương trình Lớp 10</h1>
-            <p>Vui lòng chọn bài học ở Menu bên trái.</p>
+        <div class="lesson-list">
+            <a href="lop10-bai1.html" class="lesson-item">▶ Bài 1: Các hoạt động kinh tế cơ bản trong đời sống xã hội</a>
+            <a href="lop10-bai2.html" class="lesson-item">▶ Bài 2: Các chủ thể của nền kinh tế</a>
         </div>
     </div>
+
+    <div class="topic-container">
+        <div class="topic-header">
+            <span>⭐</span>
+            <h2>Chủ đề 2: Thị trường và cơ chế thị trường</h2>
+        </div>
+        <div class="lesson-list">
+            <a href="lop10-bai3.html" class="lesson-item">▶ Bài 3: Thị trường</a>
+            <a href="lop10-bai4.html" class="lesson-item">▶ Bài 4: Cơ chế thị trường</a>
+        </div>
+    </div>
+
+    <div class="topic-container">
+        <div class="topic-header">
+            <span>⭐</span>
+            <h2>Chủ đề 3: Ngân sách nhà nước</h2>
+        </div>
+        <div class="lesson-list">
+            <a href="lop10-bai5.html" class="lesson-item">▶ Bài 5: Ngân sách nhà nước</a>
+            <a href="lop10-bai6.html" class="lesson-item">▶ Bài 6: Thuế</a>
+        </div>
+    </div>
+
+    <div class="topic-container">
+        <div class="topic-header">
+            <span>⭐</span>
+            <h2>Chủ đề 4: Sản xuất kinh doanh & Mô hình sản xuất kinh doanh</h2>
+        </div>
+        <div class="lesson-list">
+            <a href="lop10-bai7.html" class="lesson-item">▶ Bài 7: Sản xuất kinh doanh và các mô hình sản xuất kinh doanh</a>
+        </div>
+    </div>
+
+    <div class="topic-container">
+        <div class="topic-header">
+            <span>⭐</span>
+            <h2>Chủ đề 5: Tín dụng và cách sử dụng dịch vụ tín dụng</h2>
+        </div>
+        <div class="lesson-list">
+            <a href="lop10-bai8.html" class="lesson-item">▶ Bài 8: Tín dụng và vai trò của tín dụng trong đời sống</a>
+            <a href="lop10-bai9.html" class="lesson-item">▶ Bài 9: Dịch vụ tín dụng</a>
+        </div>
+    </div>
+
+    <div class="topic-container">
+        <div class="topic-header">
+            <span>⭐</span>
+            <h2>Chủ đề 6: Lập kế hoạch tài chính cá nhân</h2>
+        </div>
+        <div class="lesson-list">
+            <a href="lop10-bai10.html" class="lesson-item">▶ Bài 10: Lập kế hoạch tài chính cá nhân</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 Bản quyền thuộc về Thầy Phạm Thanh Phát
+</footer>
+
 </body>
 </html>
